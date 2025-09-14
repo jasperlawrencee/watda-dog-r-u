@@ -54,7 +54,7 @@ Follow these steps to get the project running on your local machine.
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/jasperlawrencee/watda-dog-r-u.git](https://github.com/jasperlawrencee/watda-dog-r-u.git)
+git clone https://github.com/jasperlawrencee/watda-dog-r-u.git
 cd watda-dog-r-u
 ```
 
