@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Result!</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; }
+        .container { display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 30px; }
+        .image-box { border: 2px solid #ddd; padding: 10px; border-radius: 8px; }
+        img { max-width: 300px; height: auto; border-radius: 4px; }
+        h2 { margin: 0 0 10px 0; }
+        a { margin-top: 40px; display: inline-block; }
+    </style>
+</head>
+<body>
+    <h1>Here's Your Match!</h1>
+    <div class="container">
+        <div class="image-box">
+            <h2>You</h2>
+            <img src="{{ url_for('serve_user_image', filename=user_image.split('/')[-1]) }}" alt="Your Image">
+        </div>
+        <div class="image-box">
+            <h2>Your Dog Look-Alike</h2>
+            <img src="{{ url_for('serve_dog_image', filename=result_image.replace('Images/', '')) }}" alt="Result Image">
+        </div>
+    </div>
+    <a href="/">Try another one!</a>
+</body>
+</html>

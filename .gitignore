@@ -1,0 +1,11 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Images directory from [Kaggle] 
+/Images
+/Images/*
+
+# Generated pkl file
+/dog_features.pkl
