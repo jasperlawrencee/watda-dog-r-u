@@ -12,10 +12,8 @@ def process_and_save_features(dataset_path='Images'):
             if file.lower().endswith(('.png', '.jpg', '.jpeg')):
                 image_path = os.path.join(root, file)
 
-                # 1. Crop the center of the dog image
                 cropped_dog_img = crop_center(image_path)
 
-                # 2. Get features from the cropped image
                 feature_vector = get_feature_vector(cropped_dog_img)
 
                 if feature_vector is not None:
