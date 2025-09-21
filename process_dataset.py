@@ -3,6 +3,7 @@ import pickle
 from tqdm import tqdm
 from feature_extractor import crop_center, get_feature_vector
 
+# Create repeat process for different indexes
 def process_and_save_features(dataset_path='Images'):
     """
     Loops through all images in the dataset, extracts their features,
